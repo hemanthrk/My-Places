@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>My-Places</title>
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/jumbotron.css">
+	<link rel="stylesheet"  href="./css/style.css">
+	<link rel="stylesheet"  href="./css/weather-icons-wind.css">
+	<link rel="stylesheet"  href="./css/weather-icons-wind.min.css">
+	<link rel="stylesheet"  href="./css/weather-icons.css">
+	<link rel="stylesheet"  href="./css/weather-icons-wind.min.css">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+</head>
+<body >
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" href="#">My-Places</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          
+          
+          
+        </ul>
+        
+          <input class="form-control col-md-4" id="address" type="text" placeholder="Enter a City or Address"  aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0 srchButton" id="addSrch" type="submit">Search</button>
+       
+      </div>
+    </nav>
+    
+      <div class="container-fluid fill">
+        
+        <div id="map">
+          
+        </div>
+      
+      
+        
+
+        <footer class="footer bg-dark">
+      <div class="container footer-btn">
+         <input type="button" class="btn btn-primary" value="Show Locations" id="showSavedLoc"> 
+         <input type="button" class="btn btn-primary" value="Remove Locations" id="removeSavedLoc"> 
+
+      </div>
+    </footer>
+       
+       
+      </div>
+   
+    
+  
+<script src="jquery-3.2.1.min.js"></script>
+<script src="index.js"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7hC0br3wKuMoD7_bhZUbBKreLD9490j4&libraries=places"></script>
+
+<script type="text/javascript">
+  
+// var map, marker, geocoder;
+
+//   var loc = {lat: 40.3356, lng: -75.9269}; //latlong for Reading,Pa
+  
+
+//   function initialize(){
+
+//     geocoder = new google.maps.Geocoder();
+
+//     //var latlng = new google.maps.LatLng(40.3356,-75.9269);
+
+//      map = new google.maps.Map(document.getElementById('map'), {
+//           center: loc,
+//           zoom: 8
+//         });
+//          marker = new google.maps.Marker({
+//             map: map,
+//             position: loc
+//         });
+    
+
+//   }
+
+ 
+
+ 
+
+
+  //function codeAddress(){
+
+    //var address = document.getElementById("address").value;
+
+    //loc = {lat: 34.0522, lng: -118.2437}
+   
+    //newLocation(34.0522, -118.2437);
+    
+
+
+    // geocoder.geocode({'address':address}, function(results, status){
+
+    //   if(status === "OK"){
+
+    //     map.setCenter(results[0].geometry.location);
+    //     marker = new google.maps.Marker({
+    //         map: map,
+    //         position: results[0].geometry.location
+    //     });
+    //   }else{
+    //     alert("Some problem in locating the place of interest"+ status);
+    //   }
+
+    // });
+
+  //}
+
+</script>
+
+
+</body>
+</html>
